@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Hello Checking Conditional Rendering 2" 
+    icon-name="custom:custom14">
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+            type="checkbox"
+            label="Check panna value varum"
+            onchange={handlechange}>
+            </lightning-input>
+        </div>
+            <div class="slds-var-m-vertical_medium">
+                <template lwc:if={detailsVisible}>
+                    <p> Details Visible</p>
+                </template>
+                <template lwc:else> Not showing anything </template>
+            </div>
+    </lightning-card>
+</template>
